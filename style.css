@@ -1,0 +1,169 @@
+/* Copyright 2023 The MediaPipe Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. */
+
+@use "@material";
+body {
+  font-family: "Yusei Magic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  background-color: #A4865E;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 5rem;
+  align-items: center;
+}
+
+#wrapper {
+ background-color: #FFF7DD;
+  width: 70%;
+  padding: 1rem;
+  border-radius: 1%;
+}
+
+h1 {
+  color: #742B30;
+  margin: 0 0 1rem 0;
+  border-bottom: #443B32 solid 1px;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.cta-button {
+  background-color: #742B30;
+  color: #FFF7DD;
+  border: 1px solid transparent;
+  border-radius: 5%;
+  padding: 0.5rem 1rem;
+  margin: 1rem 1rem 1rem 0;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #F4DEBA;
+  border: #742B30 solid 1px;
+  cursor: pointer;
+  color: #742B30;
+}
+
+#left-side {
+  margin-left: 2rem;
+  width: 100%
+}
+
+#right-side {
+  width: 100%;
+  margin-right: 2rem;
+  margin-bottom: 5rem;
+  margin-left: 2rem;
+}
+
+h2 {
+  clear: both;
+}
+
+em {
+  font-weight: bold;
+}
+
+video {
+  clear: both;
+  display: block;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+
+section {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+header,
+footer {
+  clear: both;
+}
+
+.removed {
+  display: none;
+}
+
+.invisible {
+  opacity: 0.2;
+}
+
+.note {
+  font-style: italic;
+  font-size: 130%;
+}
+
+.videoView,
+.detectOnClick {
+  position: relative;
+  float: left;
+  width: 48%;
+  margin: 2% 0;
+}
+
+.videoView p,
+.detectOnClick p {
+  position: absolute;
+  padding: 5px;
+  background-color: #FFF7DD;
+  color: #fff;
+  border: 1px dashed rgba(255, 255, 255, 0.7);
+  z-index: 2;
+  font-size: 12px;
+  margin: 0;
+}
+
+#performedSpell {
+  color: #742B30;
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+#generated-content {
+  margin-right: 4rem;
+}
+
+.highlighter {
+  background: rgba(0, 255, 0, 0.25);
+  border: 1px dashed #fff;
+  z-index: 1;
+  position: absolute;
+}
+
+.canvas {
+  z-index: 1;
+  position: absolute;
+  pointer-events: none;
+}
+
+.output_canvas {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+
+.detectOnClick {
+  z-index: 0;
+}
+
+.detectOnClick img {
+  width: 100%;
+}
